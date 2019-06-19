@@ -1,0 +1,37 @@
+// layout
+// navbar cart排列順序
+@media (min-width:768px){
+    .order-md-1{
+        order:1;
+}
+}
+
+// 首頁
+.bg-cover{
+    background-position: center center;
+    background-size:cover; 
+}
+
+@include media-breakpoint-up(md){
+    .vertical-md-position{
+        margin-top: -24px;
+        margin-bottom: -24px;
+    } 
+    .writing-md-vertical{
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: 5px;
+    }
+}
+
+
+
+
+
+.vertical-textContent{
+    line-height: 2;
+    @include media-breakpoint-up(md){
+        line-height: 2.5;
+    }
+}
+

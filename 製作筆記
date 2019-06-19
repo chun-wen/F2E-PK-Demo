@@ -1,0 +1,75 @@
+一 、
+live complier不能編譯ejs
+
+二、
+bootstrap讀法
+1.第一塊
+bootstrap-grid.scss
+bootstrap-reboot.scss
+bootstrap.scss
+
+2.第二塊
+_variables.scss
+
+3.第三塊
+元件區塊(如：區塊、modal)  //有空再看
+_utilities.scss
+
+
+三、
+我們可以拿bootstrap上的變數來設計自己的元件 如：
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+.p-lg{
+    font-size: $font-size-lg;
+}
+
+layout
+注意部分
+1.svg圖片不能上傳到unsplash
+
+Navbar
+1.flex:order可以調整排列順序
+購物車呈現順序就是調整order
+
+2.如何讓漢堡選單置右呢?
+Responsive bahaviours中-toggler有介紹
+結論：
+調整button跟 a連結順序即可
+
+延伸思考：如果我只想把logo到最右邊呢?
+給你一個方向：navbar中預設justify-content:space-between 
+
+訂閱Section
+1.input group
+目的：將button、input、文字變成群組
+2.本次有使用到input-group-prepend增添按鈕跟信件icon
+3.form-control有預設background-clip:padding-box會造成視覺上凹陷
+把這個屬性拿掉後就OK了
+
+Q1.訂閱我的甜蜜郵件這部分，為何input group這邊我調整justify-content-between或 justify-content-start畫面上都沒有移動的感覺?
+
+footer
+若要與上方對齊，記得col-數字，要設成相同
+EX：col-md-5
+
+Q1：mt-數字到底在哪改?
+A：就是spacer啊 ，我們可以自己增加數字6、7、8
+
+
+首頁
+為什麼選擇做甜點區塊
+1.垂直書寫
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/writing-mode
+2.line-height
+3.圖片突出
+>>圖片已經不可能超過section範圍
+>>將section推擠
+Q1：為何寫h-100，圖片高度會消失?
+<div class="col-md-6 bg-cover vertical-md-position" style="background-image: url(https://bit.ly/2xPn7Eq);min-height:250px">
+                </div>
+
+毛玻璃效果
+https://ithelp.ithome.com.tw/articles/10208692

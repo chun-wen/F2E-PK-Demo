@@ -1,0 +1,31 @@
+.itemCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__img{
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        height: 315px;
+    }
+    &__body{
+        padding: 0;
+    }
+    &__tag{
+        position: absolute;
+        background-color: $primary;
+        color: $light;
+        padding: 10px;
+        top:0;
+        left:20px;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: 5px;
+    }
+    &__icon{
+        position: absolute;
+        color:$primary;
+        top:20px;
+        right:22px;
+    }
+}

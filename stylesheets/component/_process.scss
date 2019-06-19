@@ -1,0 +1,52 @@
+.process {
+  display: flex;
+  min-height: 1rem;
+  position: relative;
+// 灰白色的線
+  &:after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: #8da291;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__circle {
+    border-radius: 50%;
+    border: 1px solid #8da291;
+    width: 20px;
+    height: 20px;
+    background-color: #3f5d45;
+    position: relative;
+    z-index: 2;
+    // 顯示目前位置
+    &--active {
+      border: 1px solid #EAF0ED;
+      &:after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        display: block;
+        background-color: #EAF0ED;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        z-index: 3;
+      }
+    }
+    // 顯示完成
+    &--complete {
+      position: relative;
+      background-color: #fff;
+      &:before{
+        position: absolute;
+        top:0;
+        left:3px;
+      }
+    }
+  }
+}

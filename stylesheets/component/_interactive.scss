@@ -1,0 +1,14 @@
+.ui-checked-display {
+    cursor: pointer;
+    .ui-show, .ui-checkbox {
+      display: none;
+    }
+    .ui-checkbox:checked {
+      & ~ .ui-show {
+        display: block;
+      }
+      & ~ .ui-hidden {
+        display: none;
+      }
+    }
+  }

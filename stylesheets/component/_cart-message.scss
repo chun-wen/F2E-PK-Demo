@@ -1,0 +1,10 @@
+.cart__message {
+  background-color: #3f5d45;
+  color: white;
+}
+@media (min-width: 768px) {
+  .cart__message--md {
+    background-color: #3f5d45;
+    color: white;
+  }
+}
