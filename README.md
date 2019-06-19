@@ -1,1 +1,2 @@
-# chunwen.github.io
+甜點電商網頁實作
+運用Bootstrap搭配Sass進行設計
